@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head> <title> Calculator program </title></head>
+  <head> 
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <title> Calculator program </title>
+  </head>
   <body>
     <p>
       <button onclick="
@@ -83,15 +87,6 @@
       ">Clear</button>
     </p>
    
-    <script>
-      let calculation = ' ';
-      function updateCalculation(value){
-        calculation = calculation + value;
-        console.log(calculation);
-      }
-      function saveCalculation(){
-        localStorage.setItem('calculation',calculation);
-      }
-    </script>
+   
   </body>
 </html>
